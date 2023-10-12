@@ -1,0 +1,6 @@
+.DS_Store
+.idea/*
+demo
+vendor
+composer.lock
+.htaccess

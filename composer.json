@@ -1,0 +1,19 @@
+{
+    "name": "secgin/telsam-sms",
+    "description": "Telsam Sms Library For Php",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "YG\\Telsam\\Sms\\": "src/",
+        }
+    },
+    "authors": [
+        {
+            "name": "secgin"
+        }
+    ],
+    "require": {
+        "ext-curl": "*",
+        "ext-json": "*"
+    }
+}
