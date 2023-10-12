@@ -19,6 +19,12 @@ class AbstractResponse implements Response
 
     public function __construct(HttpResult $requestResult)
     {
+        $this->success = false;
+        $this->result = null;
+        $this->errorCode = null;
+        $this->errorStatus = null;
+        $this->errorMessage = null;
+
         if ($requestResult->isSuccess() and $requestResult->getRawResult() != null)
         {
             $this->result = json_decode($requestResult->getRawResult(), true);
